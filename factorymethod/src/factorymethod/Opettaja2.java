@@ -12,4 +12,8 @@ public class Opettaja2 extends AterioivaOtus {
       return new Limu();  
     };
     
+    public Ruoka createRuoka(){
+        return new Hampurilaisateria();
+    };
+    
 }

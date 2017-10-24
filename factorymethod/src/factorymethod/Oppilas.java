@@ -12,5 +12,8 @@ public class Oppilas extends AterioivaOtus {
         return new Viini();
     };
     
+    public Ruoka createRuoka() {
+        return new Pihvi();
+    };
 }
 
