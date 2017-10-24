@@ -21,5 +21,6 @@ public abstract class AterioivaOtus {
         if (juoma == null)
             juoma = createJuoma();
         System.out.println("Aterian jälkeen " + juoma + " tekee terää");
+        System.out.println(" ");
     }
 }
