@@ -9,12 +9,12 @@ package AF;
  *
  * @author minna
  */
-public class AdduPaita implements Paita {
+public class AdduLippis implements Lippis {
 
     @Override
-    public void puePaita(){
-        System.out.print("Tänään minulla on päällä Addun paita, ");
-        
+    public void pueLippis() {
+        System.out.println("Addun lippis");
+
     }
     
 }

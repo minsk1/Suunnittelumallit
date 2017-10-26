@@ -9,6 +9,12 @@ package AF;
  *
  * @author minna
  */
-public class Jasper {
+public class AdduKengat implements Kengat {
+
+    @Override
+    public void pueKengat() {
+        System.out.print("Addun tossut ja ");
+
+    }
     
 }

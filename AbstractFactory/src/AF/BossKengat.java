@@ -9,12 +9,10 @@ package AF;
  *
  * @author minna
  */
-public class AdduPaita implements Paita {
+public class BossKengat implements Kengat {
 
     @Override
-    public void puePaita(){
-        System.out.print("Tänään minulla on päällä Addun paita, ");
-        
+    public void pueKengat() {
+        System.out.print("Bossin kengät ");
     }
-    
 }

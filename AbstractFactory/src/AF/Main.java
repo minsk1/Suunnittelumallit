@@ -10,7 +10,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws Exception {
-        Pue factory = null;
+        AbstractiTehdas factory = null;
 
         final String appearance = randomAppearance();	// Current operating system
 
@@ -23,18 +23,17 @@ public class Main {
 
         final Paita paita = factory.createPaita();
         final Housut housut = factory.createHousut();
+        final Lippis lippis = factory.createLippis();
+        final Kengat kengat = factory.createKengat();
         
         paita.puePaita();
         housut.pueHousut();
+        kengat.pueKengat();
+        lippis.pueLippis();
 
     }
 
-    /**
-     * This is just for the sake of testing this program, and doesn't have to do
-     * with Abstract Factory pattern.
-     *
-     * @return
-     */
+
     public static String randomAppearance() {
         final String[] appearanceArray = new String[2];
 

@@ -9,10 +9,10 @@ package AF;
  *
  * @author minna
  */
-public class AdduFactory implements Pue {
+public class AdduFactory implements AbstractiTehdas {
 
     @Override
-    public Housut createHousut(){
+    public Housut createHousut() {
         return (Housut) new AdduHousut();
     }
 
@@ -22,9 +22,12 @@ public class AdduFactory implements Pue {
     }
 
     @Override
-    public Paita paita() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Lippis createLippis() {
+        return (Lippis) new AdduLippis();
     }
-    
-    
+
+    @Override
+    public Kengat createKengat() {
+        return (Kengat) new AdduKengat();
+    }
 }

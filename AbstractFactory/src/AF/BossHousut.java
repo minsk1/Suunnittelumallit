@@ -13,7 +13,7 @@ public class BossHousut implements Housut {
 
     @Override
     public void pueHousut(){
-        System.out.println(" ja Bossin housut");
+        System.out.print("Bossin housut, ");
         
     }
     

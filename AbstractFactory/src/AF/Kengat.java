@@ -9,12 +9,7 @@ package AF;
  *
  * @author minna
  */
-public class AdduPaita implements Paita {
-
-    @Override
-    public void puePaita(){
-        System.out.print("Tänään minulla on päällä Addun paita, ");
-        
-    }
+public interface Kengat {
+    void pueKengat();
     
 }

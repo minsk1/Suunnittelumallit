@@ -9,13 +9,13 @@ package AF;
  *
  * @author minna
  */
-public interface Pue {
+public interface AbstractiTehdas {
     
 
     public Paita createPaita();
     public Housut createHousut();
-
-    public Paita paita();
+    public Kengat createKengat();
+    public Lippis createLippis();
     
     
 

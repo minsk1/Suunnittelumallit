@@ -13,7 +13,7 @@ public class BossPaita implements Paita {
 
     @Override
     public void puePaita(){
-        System.out.print("Tänään minulla on päällä lippis, kengät ja Bossin paita");
+        System.out.print("Tänään minulla on päällä Bossin paita, ");
         
     }
     

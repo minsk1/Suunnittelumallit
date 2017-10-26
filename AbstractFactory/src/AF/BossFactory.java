@@ -5,7 +5,7 @@ package AF;
  *
  * @author minna
  */
-public class BossFactory implements Pue {
+public class BossFactory implements AbstractiTehdas {
     
     @Override
     public Housut createHousut(){
@@ -18,8 +18,15 @@ public class BossFactory implements Pue {
     }
 
     @Override
-    public Paita paita() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Kengat createKengat() {
+       return (Kengat) new BossKengat();
     }
+
+    @Override
+    public Lippis createLippis() {
+        return (Lippis) new BossLippis();
+    }
+
+
     
 }
