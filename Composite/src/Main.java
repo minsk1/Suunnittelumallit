@@ -1,4 +1,9 @@
 
+import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class Main {
 
     /**
@@ -24,6 +29,21 @@ public class Main {
         tietokone.add(verkkokortti);
         
         tietokone.RakennaKone();
+        
+        // tässä alapuolella tehtaan jutut (bonus) ei toimi vielä
+        
+        AbstractFactory factory = null;
+        
+        factory = new msiFactory();
+        
+        Tietokone tietokoneTehtaasta = factory.createKovalevy();
+        
+        tietokoneTehtaasta.RakennaKone();
+        
+        ArrayList<Integer> Lista = new ArrayList<Integer>();
+        
+        System.out.println(Lista);
+        
     }
     
 }
